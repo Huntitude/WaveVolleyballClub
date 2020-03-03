@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form - Wave Volleyball Club</title>
+
+    <link rel="stylesheet" href="css/navbar_only.css">
+    <link rel="stylesheet" href="css/footernav_only.css">
+    <link rel="stylesheet" href="css/registration_form.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <script defer src="js/registration_form.js"></script>
+    <script src="https://kit.fontawesome.com/6f8bd3f5e5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    
+    <section id="body_container">
+    <!-- Start Nav  -->
+    <nav class="nav_bar">
+        <a href="index.html" class="logo">Wave Volleyball Club <br><span class="logo_location">Tulsa, Oklahoma</span></a>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about_section">About</a></li>
+            <li><a href="index.html#news_section">News</a></li>
+            <li><a href="index.html#team_section">Staff</a></li>
+            <li><a href="index.html#contact_section">Contact</a></li>
+        </ul>
+        <!-- Responsive Menu  -->
+        <div class="menu-btn show">
+            <div class="menu-btn-burger"></div>
+        </div>
+        <ul class="nav_links_responsive">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about_section">About</a></li>
+            <li><a href="index.html#news_section">News</a></li>
+            <li><a href="index.html#team_section">Staff</a></li>
+            <li><a href="index.html#contact_section">Contact</a></li>
+            <li><a href="signing.html">Signing</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="try_outs.html">Try Outs</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="summer_camp.html">Summer Camp</a></li>
+            <li><a href="mission_trip.html">Mission Trip</a></li>
+            <li><a href="clinics.html">Clinics</a></li>
+            <li><a href="age_calculator.html">Age Calculator</a></li>
+        </ul>
+        <!-- Responsive Menu End -->
+
+        <!-- Other Links -->
+        <div class="dropdown">
+            <a class="dropbtn"><button>Other</button> </a>
+            <div class="dropdown-content">
+                <a href="signing.html">Signing</a>  
+                <a href="forms.html">Forms</a>  
+                <a href="fees.html">Fees</a>    
+                <a href="try_outs.html">Try Outs</a>    
+                <a href="training.html">Training</a>    
+                <a href="teams.html">Teams</a>  
+                <a href="summer_camp.html">Summer Camp</a>  
+                <a href="mission_trip.html">Mission Trip</a>    
+                <a href="clinics.html">Clinics</a>  
+                <a href="age_calculator.html">Age Calculator</a>    
+            </div>
+        </div>
+    </nav>
+    <!-- End Main Header  -->
+
+        <section id="header">
+            <p class="p1"><a href="index.html">Home</a> / Tryout Pre-Registration Form</p>
+            <h1>Wave 2020 - 2021 Tryout Pre-Registration Form</h1>
+            <p class="p2">Every player must be registered with USAV and be current for the upcoming season prior to trying out for any club. If this step was missed, please return to the <a href="try_outs.html" target="_blank">Tryout Information page</a>.</p>
+        </section>
+
+        <section id="body_content">
+            <p>If the registration form does not take you to the payment site, please click <a href="https://app.ground.work/signup/parents/orgs/wavevolleyball"  target="_blank">HERE to Make Payment</a>  </p>
+            <br>
+
+            <div class="form">
+            <h1>PARENT Registering the player: <span class="red_txt"><br class="responsive_br">* Indicates required Field</span></h1>
+
+                <form name="registration_form" id="form" action="#" method="GET">
+
+                    <div class="input-section">
+                        <input id="fname" type="text" name="fname" minlength="2" maxlength="30"  required>
+                        <label for="fname" class="label-name">
+                         <span class="content-input"><span class="red_txt">*</span> Parent First Name</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="lname" type="text" name="lname" title="Parent Last Name" minlength="2" maxlength="30" required>
+                        <label for="lname" class="label-name">
+                         <span class="content-input"><span class="red_txt">*</span> Parent Last Name</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="parent_email" type="email" name="lname" title="Parent Email" required>
+                        <label for="parent_email" class="label-name">
+                         <span class="content-input"><span class="red_txt">*</span> Parent E-mail Address</span>
+                        </label>
+                    </div>
+
+                    <p>This is the number we will call if an offer is made to your daughter.</p>
+                    <div class="input-section">
+                        <input id="parent_number" type="tel" name="parent_number" title="Parent Number" minlength="10" maxlength="12" required>
+                        <label for="parent_number" class="label-name">
+                         <span class="content-input"><span class="red_txt">*</span> Parent Phone Number (Ex: 123-456-7890)</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="parent_address" type="text" name="parent_address" minlength="2" maxlength="80"  required>
+                        <label for="parent_address" class="label-name">
+                         <span class="content-input"><span class="red_txt">*</span> Parent Address</span>
+                        </label>
+                    </div>
+
+                    <p>If a 2nd parent is actively involved during volleyball season, please enter their details below otherwise, press <a href="#skip_here"> skip</a>.</p>
+                    <br>
+
+                    <div class="input-section">
+                        <input id="parent2_fname" type="text" title="2nd Parent First Name" name="parent2_fname" minlength="2" maxlength="30" >
+                        <label for="parent2_fname" class="label-name">
+                         <span class="content-input">2nd Parent First Name</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="parent2_lname" type="text" name="parent2_lname" title="2nd Parent Last Name" minlength="2" maxlength="30">
+                        <label for="parent2_lname" class="label-name">
+                         <span class="content-input">2nd Parent Last Name</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="parent2_email" type="email" name="parent2_email" title="2nd Parent Email">
+                        <label for="parent2_email" class="label-name">
+                         <span class="content-input">2nd Parent E-mail Address</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="parent2_number" type="tel" name="parent2_number" title="2nd Parent Number" minlength="10" maxlength="12">
+                        <label for="parent2_number" class="label-name">
+                         <span class="content-input">2nd Parent Phone Number (Ex: 123-456-7890)</span>
+                        </label>
+                    </div>
+
+                    <!-- Navigation Skip link-->
+                    <span id="skip_here"></span>
+                    
+                    <div class="input-section">
+                        <input id="parent2_address" type="text" name="parent2_address" minlength="2" maxlength="80">
+                        <label for="parent2_address" class="label-name">
+                            <span class="content-input">2nd Parent Address</span>
+                        </label>
+                    </div>
+                    <h1 class="player_register">PLAYER Being Registered <span class="red_txt"><br class="responsive_br">* Indicates required Field</span></h3>
+                    <br>
+                    <div class="input-section">
+                        <input id="player_fname" type="text" name="player_fname" title="Player First Name" minlength="2" maxlength="30"  required>
+                        <label for="player_fname" class="label-name">
+                            <span class="content-input"><span class="red_txt">*</span> Player Birth Certificate First Name</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="player_lname" type="text" name="player_lname" title="Player Last Name" minlength="2" maxlength="30"  required>
+                        <label for="player_lname" class="label-name">
+                            <span class="content-input"><span class="red_txt">*</span> Player Birth Certificate Last Name</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="player_prefname" type="text" name="player_prefname" title="Player Preferred Name"minlength="2" maxlength="30" >
+                        <label for="player_prefname" class="label-name">
+                            <span class="content-input">Player Preferred Full Name (If Different):</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="player_birthday" type="date" title="Player Birth Date name="player_birthday" required>
+                        <label for="player_birthday" class="label-name">
+                            <span class="content-input"><span class="red_txt">*</span> Player Birthday</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="player_usav" type="text" title="Player USAV Number" name="player_usav" minlength="13" maxlength="13" required>
+                        <label for="player_usav" class="label-name">
+                            <span class="content-input"><span class="red_txt">*</span> Player USAV Number (13 digits)</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <input id="player_school" type="text" title="Player Currnet School" name="player_school" minlength="1" maxlength="50" required>
+                        <label for="player_school" class="label-name">
+                            <span class="content-input"><span class="red_txt">*</span> Player Current School</span>
+                        </label>
+                    </div>
+                    
+                    <div class="input-section">
+                        <input id="player_grade" type="text" title="Player Currnet School" name="player_grade" required>
+                        <label for="player_grade" class="label-name">
+                            <span class="content-input"><span class="red_txt">*</span> Player Grade (Ex: 9)</span>
+                        </label>
+                    </div>
+
+                    <div class="input-section">
+                        <!-- <input id="player_teamage" type="text" title="Select Player Team Age" name="player_teamage" required> -->
+                        <label for="player_team" class="label-name">
+                            <span class="content-input"><span class="red_txt">*</span> Select Team Age (Determine age here: <a href="#">Age Calculator</a>)</span>
+                        </label>
+                        <select id="player_team" for="player_team-age" >
+                            <option value="" disabled selected>Select your team</option>
+                            <option value="12" disabled="disabled">12s - COMPLETED</option>
+                            <option value="13" disabled="disabled">13s - COMPLETED</option>
+                            <option value="14" disabled="disabled">14s - COMPLETED</option>
+                            <option value="15">15s - October 28 (7 to 9 pm)</option>
+                            <option value="16">16s - October 29 (7:30 to 9:30 pm)</option>
+                            <option value="17">17s - October 29 (7:30 to 9:30 pm)</option>
+                            <option value="15">15s - Nov 2 (9 to 11 am)</option>
+                            <option value="16">16s - Nov 2 (9 to 11 am)</option>
+                            <option value="17">17s - Nov 2 (9 to 11 am)</option>
+                        </select>                        
+                    </div>
+
+                   <button type="submit">Register and Continue to Payment</button>
+                   <p>If you prefer to pay at the Tryout, you can simply close the tab once you are taken to the Ground.Work website, where payments are processed for us. Making a payment here will speed up the registration process. Payments through your checking account are NO ADDITIONAL COST to you.</p>
+                </form>
+            </div>
+        </section>
+
+        <section id="footer" class="footer_container">
+            <div class="footer_links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about_section">About</a>
+                <a href="index.html#news_section">News</a>
+                <a href="index.html#contact_section">Contact</a>
+            </div>
+            <div class="footer_socialmedia">
+                <a href="https://twitter.com/wavevbclub" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/wavevolleyballclub/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/wave_volleyball_club/" target="blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer_copyright">
+                <p>Copyright &copy; <br> Wave Volleyball Club <br> Tulsa, Oklahoma</p>
+                <img src="images/wavevb.jpg" alt="logo">
+                <p>Isaiah 51:15:<br> For I am the Lord your God, who stirs up the sea so that its WAVES roar <br>—the Lord Almighty is his name.</p>
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+    <script defer type="text/javascript" src="js/nav_bar.js"></script>
+
+</body>
+</html>

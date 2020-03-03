@@ -1,0 +1,387 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css?family=Dosis|Assistant:200|Arvo|Playfair+Display|Poppins|Quicksand&display=swap');
+html {scroll-behavior: smooth;}
+
+html,body{
+   height:100%;
+}
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+ }
+ #body_container {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+#header {
+    margin-top: 150px;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+}
+#header::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 118%;
+    background: #005591;
+    left: 50px;
+    top: -16px;
+    margin: 0px 0 0 0;
+}
+#header p.p1 {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    padding-bottom: 50px; 
+}
+#header p.p1 a {color: black;}
+#header h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px 20px 40px;
+    margin-left: 40px;
+    font-size: 50px;
+    line-height: 50px;
+}
+#header h1, #header .p2 {width: 80%;}
+#header p.p2 {
+    padding: 0px 25px 20px 40px;
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+#body_content {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 600px; /*pushes the footer down */
+}
+.teams ul {
+    display: flex;
+    width: 100%;
+}
+br.list {display: none;}
+.teams ul li {
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    overflow: hidden;
+    width: 12.5%;
+    height: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+    border-right: 1px solid grey;
+    border-left: .5px solid grey;
+
+
+}
+.teams ul li p {
+    padding-top: 5px;
+    color:rgb(5, 116, 195);
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 20px; */
+}
+/* Select First tab color as default on reload page  */
+.teams ul li:first-child{background-color: rgb(234, 234, 234);}
+
+/* jquery attributes */
+.targetDiv {display: none;}
+.active {display: block;}
+
+.team_container {
+    background-color: rgb(234, 234, 234);
+    margin-top: -40px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.team_schedule {
+    width: 800px; 
+    /* margin: 0 auto; */
+}
+.team_schedule h1{
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px 20px;
+    font-size: 35px;
+}
+.team_schedule p {
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    font-size: 20px;
+
+}
+.team_schedule a {color: black;}
+.team_schedule h2 {
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* DivTable.com */
+.divTable{
+    display: table;
+    font-family: 'Quicksand', sans-serif;
+}
+table thead{width: 100%;}
+tbody tr:nth-child(even) {background-color: rgb(233, 233, 233);}
+tbody tr:nth-child(even):hover {background-color: rgb(131, 131, 131);color: white;}
+tbody tr:nth-child(odd) {background-color: #ffffff;}
+tbody tr:nth-child(odd):hover {background-color: rgb(131, 131, 131);color: white;}
+thead tr th {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+tbody tr th {
+    text-align: left;
+}
+tbody tr td {
+    text-align: center;
+    padding: 10px;
+}
+tbody tr th, tbody tr td  {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.divTableRow:hover {background-color: rgba(155, 155, 155, 0.578);}
+
+.team_roster{
+    font-family: 'Poppins', sans-serif;
+    width: 330px;
+    margin-top: 50px;
+}
+.team_roster img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.team_roster h2 {
+    display: inline-block;
+    font-size: 25px;
+}
+.parent_roles{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+.parent_roles h1 {font-size: 30px;}
+.parent_roles p {font-size: 20px;}
+
+span.boldtxt {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1045px) {
+    .teams ul li p {font-size: 18px;}
+    .team_container {display: block;}
+    .team_schedule {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .team_schedule h1, .team_schedule h2, .team_schedule p {text-align: center;}
+    .divTable {margin: 0 auto;}
+    .team_roster{
+        margin: 10px auto;
+        text-align: center;
+        width: 50%;
+    }
+    table {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .parent_roles{text-align: center;}
+}
+@media only screen and (max-width: 1024px){
+    #header::before {
+        width: 2px;
+        left: 30px;
+    } 
+    #header {
+        margin-top: 130px;
+        margin-bottom: 50px;
+    } 
+    #header h1 {
+        padding: 30px 20px;
+        margin-left: 30px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #header p.p1 {font-size: 18px;}
+    /* #header h1, #header .p2 {width: 79%;} */
+    #header p.p2 {padding: 0 25px 20px 10px;}
+}
+
+@media only screen and (max-width: 900px) {
+    .teams ul li {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .teams ul li p {
+        font-size: 17px;
+    }
+
+    .team_schedule p {
+        padding-bottom: 15px;
+    }
+    .divTable {
+        width: 100%;
+        margin: 0 0;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #header::before {
+        width: 2px;
+        height: 100%;
+        left: 20px;
+        top: -1px;
+    }
+    #header {
+        margin-bottom: 20px;
+    }
+    #header p.p1, #header p.p2 {
+        font-size: 15px;
+    }
+    #header h1 {
+        padding: 40px 0px 0px 0px;
+        margin-left: 40px;
+        font-size: 30px;
+        width: 80%;
+        line-height: 30px;
+    }
+    #header p.p2 {padding: 10px 25px 20px 0px; width: 80%;}
+
+}
+@media only screen and (max-width: 700px) {
+    .teams ul li {
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        height: 30px;
+    }
+    .teams ul li p {
+        font-size: 13px;
+    }
+    .team_container {
+        margin-top: -25px;
+        padding-top: 30px;
+    }
+    .team_schedule {
+        width: 100%;
+    }
+    .team_schedule h1, .team_schedule h2 {
+        font-size: 28px;
+        padding: 5px 0px;
+    }
+    .team_schedule p {
+        font-size: 15px;
+    }
+    tbody tr th, tbody tr td{
+        font-size: 15px;
+    }
+    .team_roster {
+        width: 80%;
+    }
+    .parent_roles {
+        margin-top: 20px;
+    }
+    .parent_roles h1{
+        font-size: 20px;
+    }
+    .parent_roles p{
+        font-size: 15px;
+    }
+
+} 
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        line-height: 20px;
+    }
+    #header {
+        margin-bottom: 50px;
+        margin-top: 120px;
+    }
+
+    #body_content {
+        width: 95%;
+    }
+    br.list{
+        display: block;
+    }
+    .teams {
+        overflow: hidden;
+        z-index: -1;
+    }
+    .teams ul li{
+        border-right: 1px solid grey;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        height: 37px;
+    }
+    .teams ul li p {
+        line-height: 15px;
+        padding: 5 5px;
+    }
+    .team_container {
+        margin-top: -45px;
+        padding-top: 50px;
+    }
+    .team_schedule h1, .team_schedule h2 {
+        font-size: 25px;
+    }
+    thead tr th {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    #header::before {
+        width: 2px;
+        height: 100%;
+        left: 11px;
+        top: 16px;
+    }
+    #header h1 {
+        padding: 30px 0px 10px 20px;
+        margin-right: auto;
+        margin-left: 0;
+        font-size: 27px;
+        line-height: 25px;
+        width: 90%;
+    }
+    #header p.p1 {
+        font-size: 13px;
+    } 
+    #header p.p2 {
+        width: 80%;
+        font-size: 13px;
+    } 
+    #header p.p2 {
+        padding: 0 0;
+        margin-left: 20px;
+        width: 80%;
+    }
+    #body_content {
+        padding-bottom: 450px ;
+    }
+    .teams ul li p {
+        font-size: 10px;
+    }
+    .team_schedule h1, .team_schedule h2 {
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    .team_schedule p {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    tbody tr th, tbody tr td{
+        font-size: 10px;
+    }
+    .parent_roles p{
+        font-size: 13px;
+    }
+}

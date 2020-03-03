@@ -1,0 +1,189 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css?family=Dosis|Assistant:200|Arvo|Playfair+Display|Poppins|Quicksand&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+ }
+ #body_container {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+#header {
+    margin-top: 150px;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+}
+#header::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 118%;
+    background: #005591;
+    left: 50px;
+    top: -16px;
+    margin: 0px 0 0 0;
+}
+#header p.p1 {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    padding-bottom: 50px; 
+}
+#header p.p1 a {color: black;}
+#header h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px 20px 40px;
+    margin-left: 40px;
+    font-size: 50px;
+    line-height: 50px;
+}
+#header h1, #header .p2 {width: 90%;}
+#header p.p2 {
+    padding: 0px 25px 20px 40px;
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+#body_content {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 600px;
+    display: flex;
+}
+
+.body_info {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.age_calculator {
+    margin: 0 50px;
+}
+.age_calculator h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.age_calculator p {
+    font-size: 17px;
+}
+input#birth_date {
+    border: none;
+    border-bottom: 3px solid #005591;
+    font-size: 20px;
+}
+input#submit {
+    width: 155px;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    color: black;
+    border: 2px solid #005591;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 5px 5px;
+    display: block;
+    margin: 20px 0;
+}
+input#submit:hover {
+    background-color: #005591; /* Green */
+    color: white;
+    border: 2px solid #7ec9ff;
+}
+.invalid-date p {
+    color: rgb(193, 5, 5);
+    margin-left: 20px;
+}
+[class^="div"] h3, [class^="div"] p{
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #header::before {
+        width: 2px;
+        left: 30px;
+    } 
+    #header::before {
+        width: 2px;
+        left: 30px;
+    } 
+    #header h1 {
+        padding: 30px 20px;
+        margin-left: 30px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #header p.p1 {font-size: 18px;}
+    #header p.p2 {padding: 0 25px 20px 10px;}
+    .age_calculator h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #header::before {
+        width: 2px;
+        height: 100%;
+        left: 20px;
+        top: -1px;
+    } 
+    #header {
+        margin-bottom: 20px;
+        margin-top: 120px;
+    }
+    #header p.p1, #header p.p2 {
+        font-size: 15px;
+    }
+    #header h1 {
+        padding: 40px 0px 0px 0px;
+        margin-left: 40px;
+        font-size: 30px;
+        width: 80%;
+        line-height: 30px;
+    }
+    #header p.p2 {padding: 10px 25px 20px 0px;}
+    .age_calculator {
+        margin: 0 0;
+    }
+    .age_calculator h1 {
+        font-size: 18px;
+    }
+    .age_calculator p, input#birth_date {
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width: 390px) {
+    #header::before {
+        width: 2px;
+        height: 100%;
+        left: 11px;
+        top: 16px;
+    }
+    #header {
+        margin-bottom: 30px;
+        margin-top: 100px;
+    }
+    #header h1 {
+        padding: 30px 0px 10px 20px;
+        margin-right: auto;
+        margin-left: 0;
+        font-size: 27px;
+        line-height: 25px;
+        width: 100%;
+    }
+    #header p.p1, #header p.p2 {font-size: 13px;} 
+    #header p.p2 {
+        padding: 0 0;
+        margin-left: 20px;
+        width: 80%;
+    }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Wave Volleyball Club</title>
+
+    <link rel="stylesheet" href="css/age_calculator.css">
+    <link rel="stylesheet" href="css/navbar_only.css">
+    <link rel="stylesheet" href="css/footernav_only.css">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <script src="https://kit.fontawesome.com/6f8bd3f5e5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script defer type="text/javascript" src="js/nav_bar.js"></script>
+    <script defer type="text/javascript" src="js/age_calculator.js"></script>
+
+
+</head>
+<body>
+    <section id="body_container">
+    <!-- Start Nav  -->
+    <nav class="nav_bar">
+        <a href="index.html" class="logo">Wave Volleyball Club <br><span class="logo_location">Tulsa, Oklahoma</span></a>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about_section">About</a></li>
+            <li><a href="index.html#news_section">News</a></li>
+            <li><a href="index.html#team_section">Staff</a></li>
+            <li><a href="index.html#contact_section">Contact</a></li>
+        </ul>
+        <!-- Responsive Menu  -->
+        <div class="menu-btn show">
+            <div class="menu-btn-burger"></div>
+        </div>
+        <ul class="nav_links_responsive">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about_section">About</a></li>
+            <li><a href="index.html#news_section">News</a></li>
+            <li><a href="index.html#team_section">Staff</a></li>
+            <li><a href="index.html#contact_section">Contact</a></li>
+            <li><a href="signing.html">Signing</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="try_outs.html">Try Outs</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="summer_camp.html">Summer Camp</a></li>
+            <li><a href="mission_trip.html">Mission Trip</a></li>
+            <li><a href="clinics.html">Clinics</a></li>
+            <li><a href="age_calculator.html">Age Calculator</a></li>
+        </ul>
+        <!-- Responsive Menu End -->
+
+        <!-- Other Links -->
+        <div class="dropdown">
+            <a class="dropbtn"><button>Other</button> </a>
+            <div class="dropdown-content">
+                <a href="signing.html">Signing</a>  
+                <a href="forms.html">Forms</a>  
+                <a href="fees.html">Fees</a>    
+                <a href="try_outs.html">Try Outs</a>    
+                <a href="training.html">Training</a>    
+                <a href="teams.html">Teams</a>  
+                <a href="summer_camp.html">Summer Camp</a>  
+                <a href="mission_trip.html">Mission Trip</a>    
+                <a href="clinics.html">Clinics</a>  
+                <a href="age_calculator.html">Age Calculator</a>    
+            </div>
+        </div>
+    </nav>
+    <!-- End Main Header  -->
+
+        <section id="header">
+            <p class="p1"><a href="index.html">Home</a> / Team Age Calculator</p>
+            <h1>USA Volleyball Team Age Calculator</h1>
+            <p class="p2">This calculator will provide a Team Age result based on the 2019-2020 USAV Volleyball season (Generally between Nov. 2019 through May 2020).</p>
+        </section>
+
+        <section id="body_content">
+            <div class="body_info">
+                <div class="age_calculator">
+                    <h1>2019 - 2020 Season</h1>
+                    <p>Athlete's birthday:</p>
+                    <br>
+                    <div class="invalid-date" id="under-invalid-date">
+                        <p>Invalid date!</p>
+                    </div>
+                    <input type="date" id="birth_date">
+                    <input id="submit" class="btn" type="button" value="Check Age Division" onclick="ageCalculate()">
+                
+                    <br/>
+                    <!-- <div id="age"></div> -->
+
+                    <div class="divNone" id="under-all">
+                        <h3>No division is available for that age.</h3>
+                    </div>
+
+                    <div class="div18" id="under-18">
+                        <h3>18 and Under Division</h3>
+                        <p>Players who were born on or after September 1, 2001 or Players who were born on or after September 1, 2000 and a high school student in the twelfth grade or below during some part of the current academic year.</p>
+                    </div>
+
+                    <div class="div17" id="under-17">
+                        <h3>17 and  Under Division</h3>
+                        <p>Players who were born on or after September 1, 2002</p>
+                    </div>
+
+                    <div  class="div16" id="under-16">
+                        <h3>16 and  Under Division</h3>
+                        <p>Players who were born on or after September 1, 2003</p>
+                    </div>
+
+                    <div class="div15" id="under-15">
+                        <h3>15 and  Under Division</h3>
+                        <p>Players who were born on or after September 1, 2004</p>
+                    </div>
+
+                    <div class="div14" id="under-14">
+                        <h3>14 and  Under Division</h3>
+                        <p>Players who were born on or after September 1, 2005</p>
+                    </div>
+
+                    <div class="div13" id="under-13">
+                        <h3>13 and  Under Division</h3>
+                        <p>Players who were born on or after September 1, 2006</p>
+                    </div>
+
+                    <div class="div12" id="under-12">
+                        <h3>12 and  Under Division</h3>
+                        <p>Players who were born on or after September 1, 2007</p>
+                    </div>
+
+                    <div class="div11" id="under-11">
+                        <h3>11 and  Under Division</h3>
+                        <p>Players who were born on or after September 1, 2008</p>
+                    </div>
+
+                    <div class="div10" id="under-10">
+                        <h3>10 and  Under Division</h3>
+                        <p>Players who were born on or after September 1, 2009</p>
+                    </div>
+
+                    <div class="div9"  id="under-9">
+                        <h3>9 and Under Division</h3>
+                        <p>Players who were born on or after September 1, 2010</p>
+                    </div>
+
+                    <div class="div8"  id="under-8">
+                        <h3>8 and Under Division</h3>
+                        <p>Players who were born on or after September 1, 2009</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="footer" class="footer_container">
+            <div class="footer_links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about_section">About</a>
+                <a href="index.html#news_section">News</a>
+                <a href="index.html#contact_section">Contact</a>
+            </div>
+            <div class="footer_socialmedia">
+                <a href="https://twitter.com/wavevbclub" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/wavevolleyballclub/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/wave_volleyball_club/" target="blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer_copyright">
+                <p>Copyright &copy; <br> Wave Volleyball Club <br> Tulsa, Oklahoma</p>
+                <img src="images/wavevb.jpg" alt="logo">
+                <p>Isaiah 51:15:<br> For I am the Lord your God, who stirs up the sea so that its WAVES roar <br>—the Lord Almighty is his name.</p>
+            </div>
+        </section>
+    </section>
+
+
+</body>
+</html>
