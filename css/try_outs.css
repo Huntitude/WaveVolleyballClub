@@ -47,7 +47,7 @@ html, body {
     font-size: 50px;
     line-height: 50px;
 }
-#header h1, #header .p2 {max-width: 800px;}
+#header h1, #header .p2 {width: 90%;}
 #header p.p2 {
     padding: 0px 25px 20px 40px;
     margin-left: 40px;
@@ -113,6 +113,7 @@ html, body {
     }
     #header p.p1 {font-size: 18px;}
     #header p.p2 {padding: 0 25px 20px 10px;}
+    #header h1, #header .p2 {width: 85%;}
     #body_content {
         padding-bottom: 500px; /*pushes footer down */
         margin-left: auto;
@@ -157,6 +158,8 @@ html, body {
         width: 70%;
         line-height: 30px;
     }
+    #header h1, #header .p2 {width: 80%;}
+
     #header p.p2 {padding: 0 25px 20px 0px;}
     #body_content {
         margin-left: 20px;

@@ -44,9 +44,9 @@ html, body {
     padding: 40px 0px 20px 40px;
     margin-left: 40px;
     font-size: 50px;
-    max-width: 900px;
     line-height: 50px;
 }
+#header h1, #header .p2 {width: 90%;}
 #header p.p2 {
     padding: 0px 25px 20px 40px;
     margin-left: 40px;
@@ -99,7 +99,7 @@ html, body {
         font-size: 40px;
         line-height: 40px;
     }
-    #header h1, #header .p2 {max-width: 500px;}
+    #header h1, #header .p2 {width: 80%;}
     #header p.p1 {font-size: 18px;}
     #header p.p2 {padding: 0 25px 20px 10px;}
 

@@ -26,7 +26,6 @@ menuBtn.addEventListener('click', () => {
 });
 
 // Close Nav bar when pressed on a link 
-// var $menuOpen = false;
 $('ul.nav_links_responsive > li > a').on('click', function(){
     $('ul.nav_links_responsive').slideUp();
     $('.menu-btn').removeClass("open");
